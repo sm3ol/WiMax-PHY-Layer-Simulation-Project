@@ -1,0 +1,39 @@
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY multiplier_no_sdc
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:41:28  NOVEMBER 25, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "QuestaSim (SystemVerilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AA2 -to prps_compare
+set_location_assignment PIN_AA1 -to fec_compare
+set_location_assignment PIN_W2 -to inter_compare
+set_location_assignment PIN_Y3 -to modulator_compare
+set_location_assignment PIN_M9 -to rst_n
+set_location_assignment PIN_U7 -to clk
+set_global_assignment -name SYSTEMVERILOG_FILE multiplier_no_sdc.sv
+set_global_assignment -name SDC_FILE lab4.out.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE fec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE interleaver.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE prbs.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WiMax.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE prbsfec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE DPR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PLL.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RAM2P.sv
+set_global_assignment -name QIP_FILE PLL.qip
+set_global_assignment -name SIP_FILE PLL.sip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
